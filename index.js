@@ -91,13 +91,14 @@ function resetGame() {
     setTimeout(function() {
         $("body").removeClass("game-over");
     }, 200);
-    resetStat();
+    
     setTimeout(function() {
         $("h1").text("Resetting Game...");
         setTimeout(function() {
             $("h1").text("Press A Key to Start");
         }, 1000);
     }, 1000);
+    resetStat();
 }
 
 // reset stat
